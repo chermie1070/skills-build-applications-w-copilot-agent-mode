@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Layout and table tweaks for OctoFit frontend */
+.container {
+  max-width: 1100px;
+}
+
+.h4 {
+  margin: 0;
+}
+
+.table-responsive {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  border-radius: 6px;
+  background: #fff;
+  padding: 8px;
+}
+
+.navbar .nav-link {
+  color: rgba(255,255,255,0.9);
+}
+
+.alert {
+  max-width: 100%;
+}
+
+/* Brand colors and background */
+:root{
+  --oft-bg-1: #071526; /* deep navy */
+  --oft-bg-2: #082a47; /* slightly lighter */
+  --oft-accent: #00b4ff; /* bright cyan */
+  --oft-accent-2: #0066ff; /* deep blue */
+  --oft-text: #e6f7ff; /* pale text */
+  --oft-muted: #9fb7d6;
+  --oft-table-header: linear-gradient(90deg, rgba(0,182,255,0.12), rgba(0,102,255,0.08));
+}
+
+body {
+  background: linear-gradient(180deg, var(--oft-bg-1) 0%, var(--oft-bg-2) 100%);
+  color: var(--oft-text);
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.navbar.bg-dark {
+  background: linear-gradient(90deg, rgba(2,18,31,0.95), rgba(4,36,66,0.95));
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.navbar-brand .octo-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.navbar-title {
+  font-weight: 600;
+  color: var(--oft-accent-2);
+  font-size: 1.05rem;
+}
+
+.h4 {
+  color: var(--oft-accent);
+}
+
+.table thead th {
+  background: var(--oft-table-header);
+  color: var(--oft-text);
+}
+
+.table tbody td {
+  color: var(--oft-text);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg,var(--oft-accent),var(--oft-accent-2));
+  border: none;
+}
+
+.btn-link {
+  color: var(--oft-accent);
+}
+
+a.nav-link {
+  color: var(--oft-text) !important;
+}
+
+/* subtle card background */
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.table-responsive {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  padding: 10px;
+}
+
+.text-muted {
+  color: var(--oft-muted) !important;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.hero-title {
+  color: var(--oft-accent-2);
+  font-size: 1.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.hero-subtitle {
+  color: var(--oft-text);
+  margin-bottom: 0.75rem;
+}
+
+.octo-logo-lg {
+  width: 88px;
+  height: 88px;
+  display: inline-block;
+}
+
+.hero-cta {
+  box-shadow: 0 4px 18px rgba(0,118,255,0.18);
+}
+
+/* Table zebra and hover */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255,255,255,0.015);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0,182,255,0.06) !important;
+}
+
+/* Improve table cell padding on small screens */
+@media (max-width: 576px) {
+  .table td, .table th {
+    padding: 0.5rem;
+  }
+}
